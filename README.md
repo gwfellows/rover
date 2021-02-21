@@ -1,5 +1,7 @@
 # Rover
 
+This repository contains files related to my ongoing project to build a working robot with a rocker-bogie suspension system. Currently those are CAD files for the wheel design (see description below), which can be found in the `wheels` folder.
+
 <img src="imgs/partially_assembled.jpg" width="100%"/>
 
 ## The Suspension System
