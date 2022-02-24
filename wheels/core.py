@@ -40,9 +40,7 @@ def core():
     extruded = extrude_along_path(shape_pts=shape, path_pts=path)
 
     cyl = rot_z_to_y(cylinder(d=(6*25.4)-3*25.4, h=25.4, center=True))
-    cyl -= forward(25.4/2-5)(
-        rot_z_to_neg_y(cylinder(d1 = 25.4, d2 = 60, h=30, center=False))
-    )
+    cyl -= rot_z_to_neg_y(cylinder(d1 = 25.4, d2 = 60, h=30, center=False))
     cyl -= rot_z_to_neg_y(cylinder(d = ((1/4)*25.4)+0.3, h=200, center=True))
 
     for i in range(4):
